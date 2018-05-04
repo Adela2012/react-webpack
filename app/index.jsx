@@ -1,17 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
-
+import { Provider } from 'react-redux'
+import Hello from './containers/Hello'
 import './static/css/common.less'
 
-class Hello extends React.Component {
-    render() {
-        return (
-            <p>hello world</p>
-        )
-    }
-}
+import configureStore from './store/configureStore'
+const store = configureStore()
+
+// import fn from './redux-demo.js'
+// fn();
 
 render(
-    <Hello />,
+    <Provider store={store}>
+        <Hello />
+    </Provider>,
     document.getElementById('root')
 )
