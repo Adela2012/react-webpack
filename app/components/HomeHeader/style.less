@@ -1,0 +1,71 @@
+.home-header{
+    .index-head{
+        position:fixed;
+        display: -webkit-box;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        padding: 0 10px;
+        text-align: center;
+        line-height: 50px;
+        background: #f63;
+        .city{
+            position: relative;
+            max-width: 60px;
+            padding-right: 17px;
+            display:block;
+            color: #fff;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:after{
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-style: solid;
+                border-color: #fff;
+                border-width: 1px 1px 0 0;
+                display:block;
+                transform: rotate(135deg);
+                position: absolute;
+                right: 2px;
+                top: 50%;
+                margin-top: -8px;
+            }
+        }
+        .search{
+            position: relative;
+            margin: 9px 6px 9px 10px;
+            padding-left: 30px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 25px;
+            background: #fff;
+            color: #b8b8b8;
+            &:before,&:after{
+                content:'';
+                position:absolute;
+                display: block;
+            }
+            &:before{
+                width: 8px;
+                height: 8px;
+                border: 1px solid #888;
+                border-radius: 11px;
+                left: 12px;
+                bottom: 11px;
+            }
+            &:after{
+                border-top: 1px solid #888;
+                width: 5px;
+                height: 0;
+                left: 20px;
+                bottom: 10px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .header-fill{
+        height: 50px;
+    }
+}
