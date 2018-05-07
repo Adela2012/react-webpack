@@ -11,7 +11,7 @@ class HomeHeader extends React.Component {
         return (
             <div className="home-header">
                 <header className="index-head">
-                    <a className="city">杭州</a>
+                    <a className="city">{this.props.cityName}</a>
                     <div className="search">输入商户名、地点</div>
                     <a className="self">
                         <div className="selfOutLine"></div>
