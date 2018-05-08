@@ -17,6 +17,8 @@ class Home extends React.Component {
                 <Category />
                 <div className="bord"></div>
                 <Ad />
+                <div className="bord"></div>
+                
                 home
             </div>
         )

@@ -22,9 +22,8 @@ class Category extends React.Component {
                 this.setState({index: index});
             }.bind(this)
         }
-        console.log(slideData)
         return (
-            <div id="home-category">
+            <div id="home-category" className="border-b">
                 <ReactSwipe swipeOptions={opt}>
                     {
                         [0,1,2].map((num)=>{

@@ -15,7 +15,7 @@ class Ad extends React.Component {
             <div>
                 {
                     this.state.data.length
-                    ? <HomeAd/>
+                    ? <HomeAd data={this.state.data}/>
                     : <div>加载中...</div>
                 }
             </div>
@@ -24,7 +24,7 @@ class Ad extends React.Component {
     componentDidMount() {
         getHomeAd().then(res => {
             const data = res.data
-            console.log(data)
+            // console.log(data)
             if(data.length) {
                 this.setState({
                     data: data
