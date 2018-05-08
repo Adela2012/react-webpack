@@ -15,6 +15,7 @@ class Home extends React.Component {
             <div>
                 <HomeHeader cityName={this.props.userinfo.cityName}/>
                 <Category />
+                <div className="bord"></div>
                 <Ad />
                 home
             </div>

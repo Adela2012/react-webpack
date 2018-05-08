@@ -1,6 +1,7 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { getHomeAd } from '../../../api'
+import HomeAd from '../../../components/HomeAd'
 class Ad extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -14,7 +15,7 @@ class Ad extends React.Component {
             <div>
                 {
                     this.state.data.length
-                    ? <div>ad</div>
+                    ? <HomeAd/>
                     : <div>加载中...</div>
                 }
             </div>
