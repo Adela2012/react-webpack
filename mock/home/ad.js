@@ -23,20 +23,5 @@ module.exports = [
         "shortTitle": "粮全其美",
         "price": "1.0", 
         "tag": ""
-    },
-    // {
-    //     title: '学钢琴',
-    //     img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016191700420-1584459466.png',
-    //     link: 'http://www.imooc.com/wap/index'
-    // },
-    // {
-    //     title: '电影',
-    //     img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016191706733-367929553.png',
-    //     link: 'http://www.imooc.com/wap/index'
-    // },
-    // {
-    //     title: '旅游热线',
-    //     img: 'http://images2015.cnblogs.com/blog/138012/201610/138012-20161016191713186-495002222.png',
-    //     link: 'http://www.imooc.com/wap/index'
-    // }
+    }
 ]
