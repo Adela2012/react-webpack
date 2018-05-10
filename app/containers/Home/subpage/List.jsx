@@ -26,7 +26,7 @@ class List extends React.Component {
                 }
                 {
                     this.state.hasMore
-                        ? <LoadMore /> : ''
+                        ? <LoadMore isLoadingMore={this.state.isLoadingMore} onClick={this.loadMoreData.bind(this)} /> : ''
                 }
             </div>
         )
@@ -36,11 +36,21 @@ class List extends React.Component {
         this.resultHandle(res)
     }
 
+    loadMoreData() {
+        this.setState({
+            isLoadingMore: true
+        })
+        const cityName = this.props.cityName
+        const page = this.state.page
+        const result = api.getHomeList(cityName, page)
+        this.resultHandle(result)
+        this.setState({ page: page + 1, isLoadingMore: false })
+    }
+
     resultHandle(result) {
         result.then(res => {
             const hasMore = res.data.hasMore
             const list = res.data.list
-            console.log(list)
             this.setState({
                 hasMore: hasMore,
                 list: this.state.list.concat(list)
